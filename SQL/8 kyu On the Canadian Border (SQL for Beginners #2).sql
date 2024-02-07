@@ -16,7 +16,7 @@ SELECT *
 FROM travelers
 WHERE country NOT IN ('Canada', 'Mexico', 'USA');
 
--- Another Solution:
+-- Another Solution using <>. It has to be individually coded:
 SELECT name, country
 FROM travelers
 WHERE country <> 'USA'

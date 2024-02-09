@@ -9,5 +9,12 @@
 -- tuition_received (Boolean)
 
 SELECT *
-FROM students
-WHERE tuition_received = FALSE;
+  FROM students
+  WHERE tuition_received = FALSE;
+
+-- Another Way using WHERE NOT:
+
+SELECT * 
+  FROM students 
+  WHERE NOT tuition_received;
+
